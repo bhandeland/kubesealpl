@@ -1,0 +1,33 @@
+# Perl::Critic configuration for KubeSeal
+severity = 4
+verbose = %f:%l:%c: %m (%p, Severity: %s)\n
+
+# Security-focused policies
+theme = security || bugs || maintenance
+
+# Enable security-specific checks
+[InputOutput::ProhibitTwoArgOpen]
+severity = 5
+
+[InputOutput::ProhibitBarewordFileHandles]
+severity = 5
+
+[Modules::ProhibitEvilModules]
+severity = 5
+
+[BuiltinFunctions::ProhibitStringyEval]
+severity = 5
+
+[Variables::ProhibitPackageVars]
+severity = 3
+
+[Subroutines::ProhibitExplicitReturnUndef]
+severity = 4
+
+[ErrorHandling::RequireCheckingReturnValueOfEval]
+severity = 4
+
+# Disable some overly strict policies
+[-Subroutines::ProhibitSubroutinePrototypes]
+[-ValuesAndExpressions::ProhibitConstantPragma]
+[-RegularExpressions::RequireExtendedFormatting]

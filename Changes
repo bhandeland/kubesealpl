@@ -1,0 +1,13 @@
+Revision history for KubeSeal
+
+0.01    2026-01-04
+        - Initial release
+        - Sealer class for encrypting secrets
+        - Unsealer class for decrypting secrets
+        - Support for STRICT, NAMESPACE_WIDE, and CLUSTER_WIDE scopes
+        - Certificate loading from files, URLs, and clusters
+        - Private key loading with password support
+        - Multi-key support for key rotation
+        - Secret and SealedSecret model classes
+        - YAML serialization/deserialization
+        - Compatible with Bitnami kubeseal format
