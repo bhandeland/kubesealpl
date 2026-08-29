@@ -1,5 +1,7 @@
 # KubeSeal
 
+> **This repo is mirrored from [GitLab](https://gitlab.com/nighthawk-oss/kubesealpl).** Issues, merge requests, and contributions should go there.
+
 Perl implementation of Bitnami Sealed Secrets encryption, compatible with the kubeseal CLI tool and sealed-secrets-controller.
 
 ## Synopsis
